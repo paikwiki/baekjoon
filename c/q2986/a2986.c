@@ -9,7 +9,6 @@ int main(void)
 	int n;
 
 	scanf("%d", &n);
-
 	j = 1;
 	for (i = 2; i * i <= n; i++)
 	{
