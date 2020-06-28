@@ -19,8 +19,8 @@ if let targetString = inputValue {
     })
 }
 
-let StringizedAlphabetCounts : [String] = alphabetCounts.map({ alphabetCount in
+let stringizedAlphabetCounts: [String] = alphabetCounts.map({ alphabetCount in
     return "\(String(alphabetCount))"
 })
 
-print(StringizedAlphabetCounts.joined(separator: " "))
+print(stringizedAlphabetCounts.joined(separator: " "))
