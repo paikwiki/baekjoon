@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "outDir": "out",
+      "target": "esnext",
+      "module": "commonjs",
+      "sourceMap": true,
+      "moduleResolution": "node",
+      "strict": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitAny": false,
+    },
+    "include": ["*.ts", "**/*.ts"],
+    "exclude": ["node_modules"],
+  }
