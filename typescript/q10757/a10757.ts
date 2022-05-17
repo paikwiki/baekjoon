@@ -57,24 +57,16 @@ const a10757 = () => {
       (index > 0 ? upDigitEachReversedSplit[index - 1] : 0)
     ).toString();
 
-    if (index === reversedSplittedA.length - 1) {
-      // 뒤집힌 배열의 마지막 요소(가장 큰 자릿수)일 경우
+    if (index === reversedSplittedA.length - 1)
       sumEachReversedSplit[index] = sumString;
-    } else if (sumString.length > splittedItem.length) {
-      // 덧셈한 수에서 자리올림이 있는 경우
+    else if (sumString.length > splittedItem.length) {
       upDigitEachReversedSplit[index] = 1;
-      sumEachReversedSplit[index] = Number(sumString.substring(1))
-        .toString()
-        .padStart(PROCESS_DIGITS, "0");
-      // 덧셈한 수에서 자리올림이 없는 경우
-    } else {
+      sumEachReversedSplit[index] = sumString.substring(1);
+    } else
       sumEachReversedSplit[index] = sumString.padStart(PROCESS_DIGITS, "0");
-    }
   });
 
-  const sumEachSplit = [...sumEachReversedSplit].reverse();
-  const result = sumEachSplit.join("");
-  console.log(result);
+  console.log([...sumEachReversedSplit].reverse().join(""));
 };
 
 export default a10757;
